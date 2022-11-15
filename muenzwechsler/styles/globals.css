@@ -7,6 +7,10 @@ body {
   user-select: none;
 }
 
+header {
+  padding-bottom: 3rem;
+}
+
 table {
   font-size: x-large;
   line-height: 2.8rem;
