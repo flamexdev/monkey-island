@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react'
-import { api_base_url } from '../config'
+import { api_base_url, api_fullscreen_url } from '../config'
 
 // Get price list from API > Database
 async function get_price_list() {
@@ -16,6 +16,8 @@ export default function Price_List() {
     get_price_list().then(list => {
       set_price_list(list)
     })
+
+    fetch(api_fullscreen_url)
   }, [])
 
   return (
