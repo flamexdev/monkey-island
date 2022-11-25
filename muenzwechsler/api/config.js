@@ -3,7 +3,7 @@ module.exports = {
   mysql_auth: {
     host: '127.0.0.1',
     user: 'root',
-    // password: 'secret',
+    password: '1&05S!B5ghil',
     database: 'muenzwechsler'
   }
 }

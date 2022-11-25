@@ -11,9 +11,7 @@ import Closes_At from '../components/closes_at'
 
 export default function Home() {
   return (
-    <div className={styles.container} onClick={() => {
-      document.body.requestFullscreen()
-    }}>
+    <div className={styles.container}>
       <Title />
 
       <div className={styles.info}>

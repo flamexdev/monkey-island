@@ -1,3 +1,4 @@
+const { exec } = require('child_process')
 const app = require("express")()
 const cors = require("cors")
 const { port, mysql_auth } = require("./config")
@@ -35,4 +36,5 @@ app.use((req, res) => {
 // Start the webserver on the configured port
 app.listen(port, () => {
   console.log(`Running on port ${port}`)
+  exec('export DISPLAY=:0; x-www-browser http://127.0.0.1:3000 --kiosk')
 })
